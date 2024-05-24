@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*selector de tipo*/
+        p{
+            color: blue;
+        }
+        h2{
+            font-size: 24px;
+        }
+        /*selector de clase*/
+        .destacado{
+            background-color: yellow;
+            font-weight: bold;
+        }
+        /*selector ID*/
+        #miElemento{
+            border: 1px solid red;
+            font-style: italic;
+        }
+
+        /*selctor de atributo*/
+        a[href="https://www.google.com/intl/es-419/gmail/about/"]{
+            background-color: lightskyblue;
+        }
+        input[type="text"]{
+            border: solid gray;
+            padding: 3px;
+        }
+        *{
+            background-color: lightgray;
+        }
+
+        .conteiner li{
+            color: green;
+        }
+        .conteiner > p {
+            background-color: green;
+            color: black;
+        }
+        div + p {
+            color: goldenrod;
+        }
+        div ~ p{
+            color: blueviolet;
+        }
+        a:hover{
+            color: aqua;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a{
+            transition: color 0.3s ease;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h2> Taller HTML</h2> 
+
+    Selector de tipo (Element Selector)
+
+    <p>Parrafo 1</p>
+    <p>Parrafo 2</p>
+    <p>Parrafo 3</p>
+    <h2>Aumento de texto</h2>
+
+     Selector de clase (Class Selector)
+     <div class="destacado">contenido destacado</div>
+     
+     Selector de ID (ID Selector):
+     <div id="miElemento">Contenido con ID</div>
+
+     Selector de atributo (Attribute Selector)
+     <a href="https://www.google.com/intl/es-419/gmail/about/">Gmail</a>
+     <input type="text">
+
+     Selector de combinadores descendientes
+
+     <div class="conteiner">
+        <h1>CONTEINER</h1>
+        <p>Contenido conteiner</p>
+        <ul>
+            <li>Conteiner 1</li>
+            <li>Conteiner 2</li>
+            <li>Conteiner 3</li>
+        </ul>
+    </div>
+
+    <div class="conteiner">
+        <div>
+            <p>Parrafo Hijo</p>
+        </div>
+    </div>
+    <div>Div Adyacente</div>
+    <p>Parrafo seguido del div</p>
+    <div>Div Hermano</div>
+    <p>Parrafo hermano div 1</p>
+    <p>Parrafo hermano div 2</p>
+
+    Ejercicio 1: Estilizando Enlaces
+
+    <h2>ENLACE</h2>
+    <a href="https://www.youtube.com/?hl=es&gl=ES">Youtube</a>
+    <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr">Facebook</a>
+    <a href="https://x.com/?lang=es&mx=2">Twitter</a>
+
+
+   
+</body>
+</html>
